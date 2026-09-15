@@ -1,0 +1,24 @@
+[package]
+name = "tickpack"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Lossless tick-data codec that finds the price grid inside f64 columns and beats Gorilla XOR"
+readme = "README.md"
+keywords = ["compression", "gorilla", "timeseries", "codec", "finance"]
+categories = ["compression", "encoding"]
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "tickpack"
+path = "src/main.rs"
+
+[dependencies]
+
+[dev-dependencies]
+proptest = "1"
+
+[profile.release]
+debug = false
