@@ -1,0 +1,30 @@
+{
+  "name": "tickpack",
+  "tagline": "Lossless tick-data codec that finds the price grid inside float columns and beats Gorilla XOR",
+  "language": "rust",
+  "topics": [
+    "compression",
+    "time-series",
+    "market-data",
+    "gorilla",
+    "rust",
+    "float-encoding"
+  ],
+  "trendOrigin": "QuestDB (Trend 1). Time-series databases store prices as f64 and compress them with Gorilla-style XOR. Market prices are really decimals on a tick grid, so that layout wastes bits a codec could get back.",
+  "gate": {
+    "stats": {
+      "sourceFiles": 9,
+      "testFiles": 6,
+      "testCases": 39,
+      "assertions": 113,
+      "readmeWords": 2183,
+      "testsPassed": true,
+      "lintPassed": true,
+      "entryPointRuns": true
+    },
+    "warnings": [
+      "the spec promised a benchmark and none is present"
+    ]
+  },
+  "generatedAt": "2026-09-15T17:51:31.401Z"
+}
